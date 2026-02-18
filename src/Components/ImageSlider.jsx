@@ -24,20 +24,21 @@ export default function ImageSlider() {
   return (
     <section
       id="home"
-      className="relative w-full h-[calc(72vh-4rem)] overflow-hidden"
+      className="relative w-full h-[60vh] md:h-[72vh] overflow-hidden"
     >
+
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === current ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === current ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
         >
           {/* IMAGE */}
           <div
-            className="absolute inset-0 bg-cover bg-top"
+            className="absolute inset-0 bg-cover bg-center md:bg-top"
             style={{ backgroundImage: `url(${slide.image})` }}
           />
+
 
           {/* Light overlay */}
           <div className="absolute inset-0 bg-black/10"></div>
