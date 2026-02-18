@@ -33,7 +33,7 @@ const scrollTo = (id) => {
           onClick={() => scrollTo("home")}
         >
           <img 
-            src="src/assets/Untitled design (2).png" 
+            src="/Untitled design (2).png" 
             alt="Logo" 
             className="h-10 md:h-14 object-contain"
           />
