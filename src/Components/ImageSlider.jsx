@@ -1,32 +1,14 @@
 import { useEffect, useState } from "react";
 
 const slides = [
-     {
-    image: "public/1.png",
-    title: "Safe & Secure Gold Selling",
-  },
-  {
-    image: "public/2.png",
-    title: "Meenakshi Gold Point",  
-  },
-  {
-    image: "public/3.png",
-    title: "Best Gold Price",
-  },
-   {
-    image: "public/6.png",
-    title: "Safe & Secure Gold Selling",
-  },
-   {
-    image: "public/9.png",
-    title: "Safe & Secure Gold Selling",
-  },
-   {
-    image: "public/11.png",
-    title: "Safe & Secure Gold Selling",
-  },
- 
+  { image: "/1.png", title: "Safe & Secure Gold Selling" },
+  { image: "/2.png", title: "Meenakshi Gold Point" },
+  { image: "/3.png", title: "Best Gold Price" },
+  { image: "/6.png", title: "Safe & Secure Gold Selling" },
+  { image: "/9.png", title: "Safe & Secure Gold Selling" },
+  { image: "/11.png", title: "Safe & Secure Gold Selling" },
 ];
+
 
 export default function ImageSlider() {
   const [current, setCurrent] = useState(0);
