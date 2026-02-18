@@ -6,14 +6,14 @@ const reviews = [
     name: "Basavaraju",
     location: "Bangalore",
     image:
-      "src/assets/customerImage1.jpeg",
+      "./customerImage1.jpeg",
     review:"I had a great experience selling my gold to the Meenakshi Gold. The entire process was transparent and hassle-free, with accurate valuation and prompt payment. The team was professional and trustworthy, which gave me complete confidence. I have already recommended Meenakshi Gold to my friends and relatives, who are equally satisfied with the service.",
   },
   {
   id: 2,
   name: "Sunitha Reddy",
   location: "Bangalore",
-  image: "src/assets/customerImage1.avif",
+  image: "./customerImage1.avif",
   review:
     "Selling my gold to Meenakshi Gold was a smooth and stress-free experience. The valuation was fair and clearly explained, and the payment was credited without any delay. The staff was polite and professional, making the entire process comfortable. I would definitely recommend Meenakshi Gold to anyone looking for a reliable place to sell gold.",
 },
