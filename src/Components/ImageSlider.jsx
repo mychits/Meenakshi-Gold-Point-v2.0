@@ -2,27 +2,27 @@ import { useEffect, useState } from "react";
 
 const slides = [
      {
-    image: "src/assets/6.png",
+    image: "public/1.png",
     title: "Safe & Secure Gold Selling",
   },
   {
-    image: "src/assets/1.png",
+    image: "public/2.png",
     title: "Meenakshi Gold Point",  
   },
   {
-    image: "src/assets/2.png",
+    image: "public/3.png",
     title: "Best Gold Price",
   },
-  {
-    image: "src/assets/3.png",
+   {
+    image: "public/6.png",
     title: "Safe & Secure Gold Selling",
   },
    {
-    image: "src/assets/9.png",
+    image: "public/9.png",
     title: "Safe & Secure Gold Selling",
   },
    {
-    image: "src/assets/11.png",
+    image: "public/11.png",
     title: "Safe & Secure Gold Selling",
   },
  
