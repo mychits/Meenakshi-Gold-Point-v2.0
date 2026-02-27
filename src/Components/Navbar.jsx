@@ -45,15 +45,20 @@ const scrollTo = (id) => {
             alt="Logo" 
             className="h-10 md:h-14 object-contain"
           />
-          <span className={`
-          text-5xl md:text-4xl font-bold tracking-wide
-          bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
-          bg-clip-text text-transparent
-          transition-all duration-700 ease-in-out
-          ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}
-        `}>
-            Meenakshi Gold Point
-          </span>
+         <span
+  className={`
+    block text-center
+    text-2xl sm:text-2xl md:text-4xl lg:text-4xl
+    font-bold tracking-wide
+    px-4
+    bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
+    bg-clip-text text-transparent
+    transition-all duration-700 ease-in-out
+    ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"}
+  `}
+>
+  Meenakshi Gold Point
+</span>
         </div>
 
         {/* Desktop Menu */}
