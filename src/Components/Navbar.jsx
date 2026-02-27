@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { 
   FaBars, 
   FaTimes, 
@@ -10,6 +10,7 @@ import {
 export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+    const [show, setShow] = useState(true);
 
 const scrollTo = (id) => {
   const element = document.getElementById(id);
@@ -20,6 +21,13 @@ const scrollTo = (id) => {
     window.scrollTo({ top: y, behavior: "smooth" });
   }
 };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShow((prev) => !prev);
+    }, 1000); // change every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
 
   return (
@@ -37,7 +45,13 @@ const scrollTo = (id) => {
             alt="Logo" 
             className="h-10 md:h-14 object-contain"
           />
-          <span className="text-lg md:text-xl font-bold">
+          <span className={`
+          text-5xl md:text-4xl font-bold tracking-wide
+          bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
+          bg-clip-text text-transparent
+          transition-all duration-700 ease-in-out
+          ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}
+        `}>
             Meenakshi Gold Point
           </span>
         </div>
